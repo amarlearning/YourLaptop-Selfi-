@@ -29,7 +29,7 @@
       context.drawImage(video, 0 ,0, 400, 300);
       image = context.getImageData(0, 0, 400, 300);
       data = image.data;
-      for(i=0;i<data.length;i=i+4)
+      for(i=0;i<data.length;i=i+3)
       {
         r = data[i];
         g = data[i+1];
@@ -68,14 +68,15 @@
       context.drawImage(video, 0 ,0, 400, 300);
       image = context.getImageData(0, 0, 400, 300);
       data = image.data;
-      for(i=0;i<data.length;i=i+9)
+      for(i=0;i<data.length;i=i+5)
       {
         r = data[i];
         g = data[i+1];
         b = data[i+2];
-
-        brightness = (r + g + b)/2;
-        data[i] = data[i+1] = data[i+2] = brightness;
+        brightness = (r + g + b *20)/20;
+        data[i] = brightness;
+        data[i+1] = brightness;
+        data[i+2] = brightness;
       }
       image.data = data;
       context.putImageData(image,0,0);
@@ -106,13 +107,13 @@
       context.drawImage(video, 0 ,0, 400, 300);
       image = context.getImageData(0, 0, 400, 300);
       data = image.data;
-      for(i=0;i<data.length;i=i+9)
+      for(i=0;i<data.length;i=i+4)
       {
         r = data[i];
         g = data[i+1];
         b = data[i+2];
 
-        brightness = (r + g + b)/2;
+        brightness = (r*2 + g*2 + b*2)/2.5;
         data[i] = data[i+1] = data[i+2] = brightness;
       }
       image.data = data;
