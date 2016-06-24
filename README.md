@@ -9,7 +9,7 @@
 ##Demo
 [:arrow_up:\[Back to Top\]](https://github.com/amarlearning/YourLaptop-Selfi-#selfi)
 
-<a href="https://amarlearning.github.io/project/web{selfi}">Watch a live demo of it working here</a>
+<a href="https://amarlearning.github.io/project/web{selfi}" target="_blank">Watch a live demo of it working here</a>
 
 ###ScreenShots
 ![Your web {Selfi}](https://raw.githubusercontent.com/amarlearning/YourLaptop-Selfi-/master/img/selfi.jpg)
